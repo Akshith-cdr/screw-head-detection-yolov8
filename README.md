@@ -109,6 +109,31 @@ Expected output:
 - annotated images saved under `outputs/predict/screw_head_yolov8n_preds/`
 - optional label text files if `--save-txt` is used
 
+## Results
+
+The baseline screw-head detection model was trained on the Roboflow dataset using Ultralytics YOLOv8n.
+
+Validation results:
+- Precision: 0.977
+- Recall: 0.984
+- mAP50: 0.992
+- mAP50-95: 0.812
+
+These results confirm that the baseline model is working well and provides a strong starting point for further improvement.
+
+## Release
+
+A GitHub Release has been created for the trained model.
+
+Release title:
+- Screw-head detection baseline model
+
+Release asset:
+- `best.pt`
+
+Short release note:
+- Baseline screw-head detection model trained on the Roboflow dataset using Ultralytics YOLOv8n. This release includes the fine-tuned weights file `best.pt` and the project code for training, validation, and prediction. Validation results: Precision 0.977, Recall 0.984, mAP50 0.992, mAP50-95 0.812.
+
 ## Common mistakes and fixes
 
 - Wrong `data.yaml` path: make sure the file is exactly at `data/roboflow_screw_heads/data.yaml`.
