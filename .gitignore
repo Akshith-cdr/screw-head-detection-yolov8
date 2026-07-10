@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+runs/
+outputs/
+weights/
+data/roboflow_screw_heads/
+data/*/train/
+data/*/valid/
+data/*/test/
