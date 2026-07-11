@@ -109,6 +109,17 @@ Expected output:
 - annotated images saved under `outputs/predict/screw_head_yolov8n_preds/`
 - optional label text files if `--save-txt` is used
 
+## Training Details
+
+- **Total dataset**: 522 images
+- **Training samples**: 417 images (80%)
+- **Validation samples**: 105 images (20%)
+- **Training time**: ~3 hours (CPU)
+- **Model**: YOLOv8n (nano)
+- **Epochs**: 50
+- **Image size**: 640x640
+- **Batch size**: 16
+
 ## Results
 
 The baseline screw-head detection model was trained on the Roboflow dataset using Ultralytics YOLOv8n.
