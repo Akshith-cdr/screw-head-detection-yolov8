@@ -1,10 +1,18 @@
-# Screw Head Detection using YOLOv8
+# Screw Head Detection using YOLOv8 with 5-Fold Cross-Validation
 
 ## Overview
 
 This project implements an automated screw head detection system using the YOLOv8 object detection framework. The model was trained on a Roboflow dataset and evaluated using 5-fold cross-validation to obtain reliable and unbiased performance metrics.
 
-The project includes dataset preparation, fold generation, model training, evaluation, and inference, providing a complete and reproducible computer vision pipeline.
+The project includes dataset preparation, fold generation, model training, evaluation, inference, and cloud deployment using Streamlit Community Cloud, providing a complete and reproducible computer vision pipeline.
+
+---
+
+## Live Demo
+
+The application is deployed on **Streamlit Community Cloud**, allowing users to perform screw head detection directly through a web browser without any local installation.
+
+**Application:** [Live Demo]()
 
 ---
 
@@ -38,7 +46,7 @@ The project includes dataset preparation, fold generation, model training, evalu
 
 ## Dataset
 
-The dataset was obtained from Roboflow Universe.
+The dataset was obtained from **Roboflow Universe**.
 
 | Property | Value |
 |----------|-------|
@@ -139,11 +147,28 @@ For each experiment:
 
 ---
 
+## Cloud Deployment
+
+The application has been deployed using **Streamlit Community Cloud**.
+
+The deployed web application provides:
+
+- Image upload through a web interface
+- Screw head detection using the trained YOLOv8 model
+- Annotated output image with detected screw heads
+- Detection summary including:
+  - Number of detected screw heads
+  - Confidence score for each detection
+  - Average detection confidence
+
+---
+
 ## Repository Structure
 
 ```text
 screw-head-detection-yolov8/
 │
+├── app.py
 ├── configs/
 ├── images/
 ├── models/
@@ -200,11 +225,13 @@ Evaluate the trained models.
 python src/validate.py
 ```
 
-Run inference on an image.
+Run inference locally.
 
 ```bash
 python src/predict.py --image images/sample_input.jpg
 ```
+
+Or use the deployed Streamlit application through your web browser.
 
 ---
 
@@ -220,6 +247,7 @@ python src/predict.py --image images/sample_input.jpg
 - Scikit-Learn
 - Roboflow
 - Google Colab
+- Streamlit
 
 ---
 
@@ -235,9 +263,11 @@ python src/predict.py --image images/sample_input.jpg
 
 ## Future Work
 
+- Improve screw head detection accuracy
 - Train larger YOLOv8 variants
 - Increase dataset size
 - Support multiple screw categories
+- Brand marker detection and extraction
 - Real-time video inference
 - Edge deployment on embedded devices
 
