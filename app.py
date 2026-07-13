@@ -53,7 +53,7 @@ if uploaded_file:
 
     with left:
         st.subheader("Input Image")
-        st.image(image, use_container_width=True)
+        st.image(image, width=400)
 
     if st.button("Run Detection", use_container_width=True):
 
@@ -75,7 +75,7 @@ if uploaded_file:
 
         with right:
             st.subheader("Detection Result")
-            st.image(annotated, use_container_width=True)
+            st.image(image, width=400)
 
         st.divider()
 
