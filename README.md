@@ -12,7 +12,7 @@ The project includes dataset preparation, fold generation, model training, evalu
 
 The application is deployed on **Streamlit Community Cloud**, allowing users to perform screw head detection directly through a web browser without any local installation.
 
-**Application:** [Live Demo]()
+**Application:** [Live Demo](https://screw-head-detection-yolov8.streamlit.app/)
 
 ---
 
