@@ -75,7 +75,7 @@ if uploaded_file:
 
         with right:
             st.subheader("Detection Result")
-            st.image(image, width=400)
+            st.image(annotated, width=400)
 
         st.divider()
 
